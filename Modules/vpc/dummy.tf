@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   required_version = ">= 1.0"
 
   required_providers {
@@ -7,4 +7,4 @@ terraform {
       version = "~> 5.30.0"
     }
   }
-}
+} */
