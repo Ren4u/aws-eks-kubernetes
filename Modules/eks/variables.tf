@@ -13,8 +13,9 @@ variable "eks_name" {
   type = string
 }
 
-variable "subnet_ids" {
+variable "private_web_subnet_ids" {
   description = "List of subnet IDs. Must be in at least 2 availability zones"
+  type = list(string)
 }
 
 variable "node_iam_policies" {
