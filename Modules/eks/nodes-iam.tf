@@ -6,7 +6,7 @@ resource "aws_iam_role" "nodes" {
   "Statement": {
     "Sid": "AssumeRolePolicynode1",
     "Effect": "Allow",
-    "Principal": { Service = "ec2.amazonaws.com" },
+    "Principal": { "Service" = "ec2.amazonaws.com" },
     "Action": "sts:AssumeRole"
   }
 }
