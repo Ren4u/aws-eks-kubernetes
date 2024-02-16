@@ -4,7 +4,7 @@ resource "aws_eks_node_group" "this" {
   node_group_name = each.key
   node_role_arn = aws_iam_role.nodes.arn
 
-  subnet_ids = var.private_web_subnet_ids
+  subnet_ids = var.private_web_subnets
 
   capacity_type = each.value.capacity_type
   instance_types = each.value.instance_types
